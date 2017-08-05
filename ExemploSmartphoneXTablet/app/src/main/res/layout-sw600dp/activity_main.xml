@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Container -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bdbaba"
+        android:layout_weight="2"
+        android:orientation="vertical"/>
+    <!-- Container[FIM] -->
+
+    <!-- Detalhe -->
+    <LinearLayout
+        android:id="@+id/containerDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bdbaba"
+
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+    <!-- Detalhe[FIM] -->
+</LinearLayout>
