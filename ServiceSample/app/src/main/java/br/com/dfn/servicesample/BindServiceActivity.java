@@ -55,12 +55,18 @@ public class BindServiceActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unbindService(mServiceConnection);
+    }
 
     private ServiceConnection mServiceConnection = new ServiceConnection() {
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
             mServiceBound = false;
+            mBoundService = null;
         }
 
         @Override

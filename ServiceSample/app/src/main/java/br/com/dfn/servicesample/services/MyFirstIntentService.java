@@ -17,6 +17,7 @@ public class MyFirstIntentService extends IntentService {
         uuid = UUID.randomUUID().toString();
     }
 
+
     @Override
     protected void onHandleIntent(Intent intent) {
         if (intent != null) {
