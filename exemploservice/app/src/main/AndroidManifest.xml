@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.dfn.servicesample">
+    package="br.com.dfn.exemploservice">
 
     <application
         android:allowBackup="true"
@@ -20,22 +20,15 @@
         <service
             android:name=".services.MyFirstService"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="false"
+            android:process=".services.MyFirstService" />
         <service
-            android:name=".services.MyFirstIntentService"
+            android:name=".services.MyIntentService"
             android:exported="false" />
-
-        <activity android:name=".BindServiceActivity" />
-
         <service
-            android:name=".services.MyFirstBoundService"
+            android:name=".services.MyBoundedService"
             android:enabled="true"
-            android:exported="true" />
-
-        <receiver
-            android:name=".broadcasts.MyReceiver"
-            android:enabled="true"
-            android:exported="false"></receiver>
+            android:exported="true"></service>
     </application>
 
 </manifest>
